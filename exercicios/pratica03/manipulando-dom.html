@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(76, 87, 100);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando estudos com DOM
+    </h1>
+    <p>
+        Aqui vai o resultado
+    </p>
+    <p>
+        Aprendendo a usar o <strong>DOM</strong> em JavaScript.
+    </p>
+    <div>
+        Clique em mim
+    </div>
+
+
+    <script>
+        const p1 = window.document.body
+        window.document.write("Está escrito assim: " + p1.innerText)
+    </script>
+</body>
+</html>

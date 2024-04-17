@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Super Contador
+    </title>
+</head>
+<body>
+    <header>
+        <h1>
+            Super Contador
+        </h1>
+    </header>
+    <section>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Insira os dados:</legend>
+                    <label for="txtInicio">
+                        <strong>
+                            Início:
+                        </strong>
+                    </label>
+                    <input type="number" name="txtInicio" id="txtInicio">
+
+                    <br>
+
+                    <label for="txtFim">
+                        <strong>
+                            Final:
+                        </strong>
+                    </label>
+                    <input type="number" name="txtFim" id="txtFim">
+
+                    <br>
+
+                    <label for="txtPasso">
+                        <strong>
+                            Passo:
+                        </strong>
+                    </label>
+                    <input type="number" name="txtPasso" id="txtPasso">
+                </fieldset>
+                <input type="button" value="Contar" id="btnContar">
+            </form>
+        </div>
+        <div>
+            <p id="resultado">Aguardando dados...</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

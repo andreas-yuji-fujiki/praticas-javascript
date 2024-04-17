@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+         Condições
+    </title>
+</head>
+<body>
+    <h1>
+        Sistema de Multas
+    </h1>
+    <div>
+        <label for="limite">
+            Informe o limite da via:
+        </label>
+        <input type="number" name="limite" id="limite" placeholder="Digite Aqui">
+    </div>
+    <div>
+        <label for="velocidade">
+            Informe a velocidade do carro:
+        </label>
+        <input type="number" name="velocidade" id="velocidade" placeholder="Digite Aqui">
+    </div>
+    <input type="button" value="Checar" id="checar">
+    <p id="resultado">
+        Resultado:
+    </p>
+
+
+    <script>
+        let velocidade = document.getElementById('velocidade')
+        let limite = document.getElementById('limite')
+        const resultado = document.getElementById('resultado')
+        const checar = document.getElementById('checar')
+
+        function checarLimite(){
+            if(limite.value && velocidade.value){
+                if(velocidade.value > limite.value){
+                    resultado.innerText = `Resultado: Você ultrapassou o limite da via que é ${limite.value}km/h, e foi multado por isso!`
+                }else{
+                    resultado.innerText = `Resultado: Você está dentro da velocidade permitida, tenha um bom dia!` 
+                }
+            }else{
+                resultado.innerText = `Resultado: Erro! Informe o limite e a velocidade!`
+            }
+        }
+
+        checar.addEventListener('click', checarLimite)
+    </script>
+</body>
+</html>

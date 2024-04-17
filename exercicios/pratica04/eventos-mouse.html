@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font-size: 1.3rem;
+            color: white;
+            background-color: green;
+            line-height: 10rem;
+            width: 10rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--Apresentação-->
+    <h1>
+        Eventos DOM
+    </h1>
+    <p>
+        <strong>DOM</strong> é a sigla pra: Document Object Model, e são objetos JS que servem para manipular os elementos dos documentos HTML ou CSS.
+    </p>
+    <p>
+        A <strong>Árvore DOM</strong> é básicamente uma árvore hierarquica dos objetos DOM que serve para especificar elementos.
+    </p>
+    <ul>
+        <li>
+            getElementsByTagName
+        </li>
+        <li>
+            getElementsByName
+        </li>
+        <li>
+            getElementByID
+        </li>
+        <li>
+            getElementsByClassName
+        </li>
+        <li>
+            document.querySelector 
+        </li>
+        <li>
+            document.querySelectorAll
+        </li>
+    </ul>
+    <p>
+        <strong>Eventos DOM</strong> são 
+    </p>
+    <div id="area" onmouse>
+        Interaja...
+    </div>
+
+
+<!--JavaScript :D-->
+    <script>
+        const divArea = window.document.getElementById('area')
+
+        divArea.addEventListener('mouseenter', divMouseIn)
+        divArea.addEventListener('mouseout', divMouseOut)
+        divArea.addEventListener('mousedown', divMouseDown)
+        divArea.addEventListener('click', divClick)
+        divArea.addEventListener('mousewheel', divMouseWhell)
+
+        function divMouseIn(){
+            divArea.innerText = 'Entrou!'
+            divArea.style.backgroundColor = 'black'
+        }
+        function divMouseOut(){
+            divArea.innerText = 'Saiu!'
+            divArea.style.backgroundColor = 'green'
+        }
+        function divMouseDown(){
+            divArea.innerText = 'Segurou!'
+            divArea.style.backgroundColor = 'gray'
+        }
+        function divClick(){
+            divArea.innerText = 'Clicou!'
+            divArea.style.backgroundColor = 'red'
+        }
+        function divMouseWhell(){
+            divArea.innerText = 'Rolou!'
+            divArea.style.backgroundColor = 'purple'
+        }
+    </script>
+</body>
+</html>
