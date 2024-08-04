@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Nacionalidade
+    </title>
+</head>
+<body>
+    <h1>
+        Nacionalidade
+    </h1>
+    <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Digite seu país de origem">
+    <input type="button" value="Checar" id="checar">
+    <p id="resultado"></p>
+    
+    <script>
+        let inputOrigem = document.querySelector('#nacionalidade')
+        const resultado = document.querySelector('#resultado')
+        const botãoChecar = document.querySelector('#checar')
+
+        function checarNacionalidade(){
+            if(inputOrigem.value){
+                if(inputOrigem.value != 'Brasil' &&  inputOrigem.value != 'Brazil'){
+                    resultado.innerText = `Sendo de ${inputOrigem.value}, você é um Estrangeiro!`
+                }else{
+                    resultado.innerText = `Sendo de ${inputOrigem.value} você é Brasileiro!`
+                }
+            }else{
+                resultado.innerText = 'Erro: você deve informar uma nacionalidade!'
+            }
+        }
+
+        botãoChecar.addEventListener('click', checarNacionalidade)
+    </script>
+</body>
+</html>

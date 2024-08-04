@@ -1,0 +1,23 @@
+*::after, *, *::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 101, 207);
+    font: normal 1.4rem Arial;
+}
+header{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+section{
+    background-color: white;
+    width: 30rem;
+    margin: 0 auto;
+    padding: 1.4rem;
+    border-radius: 1rem;
+}
+p{
+    margin-top: 1rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p><label for="txtnascimento"><strong>Ano de nascimento:</strong></label>
+                <input type="number" name="txtnascimento" id="txtnascimento">
+            </p>
+
+            <p><strong>Sexo:</strong>
+                <label for="masc"><input type="radio" name="radioSex" id="masc" checked> Masculino</label>
+                <label for="femi"><input type="radio" name="radioSex" id="femi"> Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Analisar" id="botaoAnalisar">
+            </p>
+        </div>
+        <div id="resultado">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Andreas Pinheiro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
