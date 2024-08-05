@@ -8,6 +8,9 @@ const myself = {
     firstName: "Andreas",
     lastName: "Pinheiro",
     age: 16,
-    mainStack: "JavaScript"
+    mainStack: "Java Script"
 }
+
+myself.mainStack = 'JavaScript'
+
 printMessage(`My name is ${myself.firstName} ${myself.lastName}, i'm ${myself.age} years old, and i'm a ${myself.mainStack} dev!`)
