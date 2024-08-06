@@ -1,10 +1,8 @@
 const phraseProcessor = (phrase) => {
     try {
-        // i know this below is unnecessary, just exploring!
-        // !String(phrase) is enough, i know it!
-        if(!String(phrase) || !isNaN(phrase) || Object(phrase) || Array(phrase)){
+        // fixed mistake here =}
+        if(typeof(phrase) != 'string'){
             throw new Error('The phrase should be a string!')
-            return
         }
 
         const phraseCharacters = phrase.trim().length
@@ -24,4 +22,4 @@ const phraseProcessor = (phrase) => {
         console.log(`[ERROR] ${error.message}`)
     }
 }
-phraseProcessor('Hello! My name is Andreas Pinheiro!')
+phraseProcessor(0)
