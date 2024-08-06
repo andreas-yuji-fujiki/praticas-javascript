@@ -93,4 +93,4 @@ function stringToNumber(givenValue){
 intToFloat(10)
 floatToInt(82.93)
 numberToString(45)
-stringToNumber('983489.99')
+stringToNumber('23212312312312321')
