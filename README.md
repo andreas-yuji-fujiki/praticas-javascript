@@ -1,2 +1,2 @@
-# praticas-javascript
-Este é meu repositório pessoal para armazenar minhas práticas e experimentos em JavaScript. Aqui, você encontrará uma variedade de projetos e exemplos nos quais tenho trabalhado para aprimorar minhas habilidades na linguagem.
+# JavaScript Practices
+This is my personal repository to store my JavaScript practices and experiments. Here you will find a variety of projects and examples that I have been working on to improve my language skills.
